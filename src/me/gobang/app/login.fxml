@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.gobang.app.LoginController">
+   <children>
+      <TextField fx:id="createIP" disable="true" layoutX="105.0" layoutY="136.0" />
+      <Button fx:id="okButton" layoutX="85.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#onOkClicked" prefHeight="30.0" prefWidth="70.0" text="确定" />
+      <Button fx:id="cancelButton" layoutX="247.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#onCancleClicked" prefHeight="30.0" prefWidth="70.0" text="取消" />
+      <RadioButton fx:id="createRoom" layoutX="14.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#selectCreateRoom" text="开启房间" />
+      <RadioButton fx:id="joinRoom" layoutX="14.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#selectJoinRoom" text="加入房间" />
+      <TextField fx:id="joinIP" layoutX="105.0" layoutY="210.0" />
+      <TextField fx:id="createPort" layoutX="327.0" layoutY="136.0" prefHeight="30.0" prefWidth="59.0" />
+      <TextField fx:id="joinPort" layoutX="327.0" layoutY="210.0" prefHeight="30.0" prefWidth="59.0" />
+      <Label layoutX="309.0" layoutY="141.0" text="：" />
+      <Label layoutX="309.0" layoutY="215.0" text="：" />
+      <Label layoutX="334.0" layoutY="102.0" text="端口号" />
+      <Label layoutX="193.0" layoutY="102.0" text="IP" />
+   </children>
+</Pane>
